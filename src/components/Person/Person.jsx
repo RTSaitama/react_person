@@ -6,7 +6,7 @@ export const Person = ({ name, age = 100, sex, partnerName }) => (
 
     {partnerName ? (
       <p className="Person__partner">
-        {partnerName} is my {sex === 'm' ? 'wife' : 'husband'}
+        {partnerName} is my {sex === 'm' ? 'husband' : 'wife'}
       </p>
     ) : (
       <p className="Person__partner">I am free now</p>

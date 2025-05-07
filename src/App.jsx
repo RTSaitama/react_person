@@ -27,7 +27,11 @@ export const alex = {
 export const App = () => (
   <div className="App">
     <Person name={misha.name} age={misha.age} partnerName={misha.partnerName} />
-    <Person name={olya.name} age={olya.age} partnerName={olya.partnerName} />
+    <Person
+      name={olya.name}
+      age={olya.age !== undefined ? olya.age : 100}
+      partnerName={olya.partnerName}
+    />
     <Person name={alex.name} age={alex.age} partnerName={alex.partnerName} />
   </div>
 );
